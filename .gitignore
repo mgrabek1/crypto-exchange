@@ -1,0 +1,76 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Build directories
+target/
+bin/
+build/
+out/
+
+# Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+gradle.log
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs and temp files
+*.log
+hs_err_pid*
+*.pid
+*.seed
+*.swp
+*.swo
+*.swn
+
+# OS-specific
+.DS_Store
+Thumbs.db
+*.bak
+
+# Dependencies
+**/node_modules/
+**/.mvn/
+
+# Generated files
+*.class
+*.war
+*.ear
+*.jar
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Database files
+*.db
+*.sqlite
+
+# Lombok generated files
+*.lombok
+
+# Docker
+docker-compose.override.yml
+
+# Test reports
+/test-results/
+surefire-reports/
+jacoco/

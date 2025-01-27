@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: crypto-exchange-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: 6379
+      SPRING_REDIS_TIMEOUT: 2000
+      CRYPTO_API_URL: https://api.coingecko.com/api/v3/exchange_rates
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7.0.11-alpine
+    container_name: redis_cache
+    ports:
+      - "6379:6379"
+    restart: always
